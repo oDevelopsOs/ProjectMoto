@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+{% for voiture in voitures %}
+    <p>
+        Marque: {{ voiture.marque }}
+        Modele: {{ voiture.modele }}
+        Horses: {{ voiture.hores }}
+    </p>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+<div class="imgMain">
+    <img src="{{ asset('img/ninja.jpg') }}" alt="Symfony!" />
+</div>
+{% endblock %}
+
+{% block footer %}
+<footer>
+    <div class="containerF">
+        <div class="row">
+            <div class="col-md-6">
+                <p>&copy; 2024 Mi Negocio</p>
+                <p><a href="terminos-y-condiciones.html">Términos y Condiciones</a> | <a href="politica-de-privacidad.html">Política de Privacidad</a></p>
+            </div>
+            <div class="col-md-6 text-end">
+                <p>Información de contacto: <a href="mailto:info@minegocio.com">info@minegocio.com</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+{% endblock %}
